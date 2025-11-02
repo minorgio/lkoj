@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="veiwport"
+        content="width+divice-width; initial scale=1.0">
+        <meta name ="description" cnotent="for my friend to order boy boy">
+        <title>Bad boy for sale</title>
+        <link rel="stylesheet" herf="style.css">
+        <style> 
+            body {
+                font-family:Arial, sans-serif;
+                background-color:rgb(39, 32, 36);
+                margin: 20px;
+            }
+            header,footer{
+                background-color:rgb(251, 255, 243);
+                padding:27px 0;
+                text-align:center;
+                border-radius:8px;
+            
+            }
+            section{
+                margin:34px;
+                background-color:rgb(252, 210, 210);
+                padding:20px;
+                border-radius:8px;
+            }
+            img{
+                border-width:8px;
+                display:right;
+                margin:0 auto;
+            }
+            h2{
+                text-align:center;
+                font-family:serif;
+            }
+            p{
+                font-size:14px;
+            }
+            button{
+            background-color:rgb(128, 255, 0);
+            border-radius:5px;
+            padding:6px;
+            margin:0 auto;
+            display:block;
+            }
+        </style>        
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to my webside</h1>
+            <nav>
+                <a href="#order">Order</a> |
+                <a href="#to">to</a>
+            </nav>
+        </header>
+        <maian>
+            <section id="order">
+            <h2>
+                Vip class
+            </h2>
+            <p><li>
+                Name:Savorn <br>
+                <li>Age:17 <br>
+                <li>height:185cm<br>
+                size:big<br>
+                strength: 20mn-1h<br>
+                price: Pay by work hard<br>
+                contact: facebook-<u>Theng Sāvorn</u>
+            </p>
+                <button id="mybutton">Order Now</button>
+                <script>
+                    const button=
+                    document.getelementByid("alertbutton");
+                    addEventlistener("click", function(){
+                    const botToken="8463887249:AAHUGRfoSfwDWD2mPufaVst6SBhll31RN4w";
+                    const chatid="8341395527";
+                    const message="New order";
+                    fetch("https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message");
+                    });
+                </script>
+            </section>
+        </maian>
+    </body>
+</html>
